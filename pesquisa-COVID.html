@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <title>Pesquisa Covid</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Grid">
+        <header>
+            <h1>Pesquisa COVID</h1>
+        </header>
+    
+        <main>
+            <h2>Dados pessoais:</h2>
+    
+            <form>
+            
+            <section>
+                <label for="Nome">Nome:</label>
+                <br>
+                <input type="text" name="nome" id="Nome" placeholder="Escreva seu nome completo." size="35" required>
+                <br>
+                <br>
+                <label for="Localização">Cidade</label>
+                <br>
+                <input type="text" name="local" id="Localização" placeholder="Digite a cidade onde reside." size="35" required>
+            </section>
+    
+            </form>
+    
+            <h2>Você realizou recentemente o exame para detecção do COVID?</h2>
+    
+            <form >
+                <section>
+                    <input type="radio" name="teste-COVID" id="positivo" value="positivo">
+                    <label for="positivo">Sim</label>
+            
+                    <br>
+    
+                    <input type="radio" name="teste-COVID" id="negativo" value="negativo">
+                    <label for="negativo">Não</label>
+                </section>
+                
+            </form> 
+          
+            <h2>Você apresentou alguns dos sintomas abaixo?</h2>
+            
+            <form>
+                <section>
+    
+                    <input type="checkbox" name="febre" id="Febre">
+                    <label for="Febre">febre</label>
+                    <br>
+                    <input type="checkbox" name="Tosse" id="tosse">
+                    <label for="tosse">Tosse</label>
+    
+                    <br>
+    
+                    <input type="checkbox" name="faltaAr" id="pulmao">
+                    <label for="pulmao">Falta de ar</label>
+                    
+                    <br>
+    
+                    <input type="checkbox" name="dor-corporal" id="dor-corporal">
+                    <label for="dor-corporal">Dor no corpo</label>
+    
+                    <br>
+    
+                    <input type="checkbox" name="nariz" id="olfato">
+                    <label for="olfato">Perde de olfato</label>
+    
+                    <br>
+    
+                    <input type="checkbox" name="diarreia" id="Diarreia" >
+                    <label for="Diarreia">Diarreia</label>
+    
+                    <br>
+    
+                    <input type="checkbox" name="sem-sintomas" id="Sem-sintomas">
+                    <label for="Sem-sintomas">Não apresentei os sintomas supracitados</label>
+    
+                </section>
+            </form>
+            
+            <h2>Você frequentou nos ultimos 3 dias um local de alto risco de contaminação?</h2>
+            <form>
+                <section>
+                    <input type="radio" name="isolamento" id="visitou">
+                    <label for="visitou">Sim</label>
+                    <label for="visitou">. Quais lugares?</label>
+    
+                    <br>
+                    <textarea name="" id="" cols="20" rows="5" placeholder="Digite os locais que visitou."></textarea>
+                    <br>
+                    
+                    <input type="radio" name="isolamento" id="isolado">
+                    <label for="isolado">Não</label>
+    
+                
+                    <br>
+                    <button type="reset">Enviar</button>
+                </section>
+            </form>
+                
+            </form>
+        </main>
+    </div>
+    
+</body>
+</html>
+
