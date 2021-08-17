@@ -1,59 +1,72 @@
-body{
+body {
     font-family: 'Mulish', sans-serif;
-    margin: 0px;
 }
-.titulo{
-    padding: 10px;
+.titulo {
+    padding: 0px 10px;
 }
 
-.titulos{
-    font-size:1.5rem;
+.titulos {
+    font-size: 1.5rem;
     padding: 10px 0px;
 }
 
-.block{
+.block {
     display: block;
     margin: 10px;
 }
 
-.borda{
+.borda {
     border: none;
 }
 
-header{
+.form-group-container {
     display: flex;
-    padding: 0px;
-    
-}
-header div{
-    display: flex;
-    align-items:center;
+    justify-content: space-between;
+    flex-flow: row wrap;
 }
 
-header img{
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 49%;
+    margin-bottom: 10px;
+}
+.form-group input {
+    width: 95%;
+}
+header {
+    display: flex;
+    padding: 0px;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header img {
     width: 150px;
     padding-top: 15px;
     background-origin: padding-box;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0.8rem;
-    
-}
-form div:nth-child(1){
-    display: flex;
-    padding-bottom: 10px;
+    width: 900px;
 }
 
-form div{
+legend {
+    font-weight: bold;
+}
+
+form div {
     display: flex;
     gap: 0.8rem;
 }
 
-main fieldset:nth-child(1){
+main fieldset:nth-child(1) {
     display: flex;
     flex-direction: column;
 }
