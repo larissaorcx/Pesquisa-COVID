@@ -2,7 +2,7 @@
     <fieldset class="borda">
         <legend class="titulos">Dados do paciente:</legend>
 
-        <form>
+        <form action="/recebe-dados" method="post">
             <div class="form-group-container">
                 <div class="form-group">
                     <label for="Nome">Nome:</label>
@@ -116,7 +116,7 @@
             <input type="radio" name="isolamento" id="isolado" />
             <label for="isolado">Não</label>
 
-            <button class="block" type="reset">
+            <button class="block" type="submit">
                 Enviar
                 <i class="far fa-paper-plane"></i>
             </button>
